@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Readify | Feedback</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send feedback and read frequently asked questions.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles/feedback.css">
+</head>
+
+<body>
+
+  
+  <header class="navbar glass">
+    <h1 class="logo">Readify</h1>
+
+    <nav id="navLinks">
+  <a href="index1.html">Home</a>
+  <a href="explore.html">Book Explorer</a>
+  <a href="tracker2.html">Tracker</a>
+  <a href="recommend.html">Recommend</a>
+  <a href="reading.html">Reading Flow</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  
+  <main class="feedback-container">
+
+    <h2 class="page-title">Feedback</h2>
+
+    
+    <form id="feedbackForm" class="feedback-form glass">
+
+      <label>
+        Name
+        <input type="text" id="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" required>
+      </label>
+
+      <label>
+        Message
+        <textarea id="message" required></textarea>
+      </label>
+
+      <button type="submit">Send Feedback</button>
+    </form>
+
+    
+    <section class="faq-section glass">
+      <h3>Frequently Asked Questions</h3>
+
+      <div class="faq-item">
+        <h4 class="faq-question">What is Readify?</h4>
+        <p class="faq-answer">
+          Readify is a platform that encourages reading through discovery and tracking tools.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4 class="faq-question">Is Readify free?</h4>
+        <p class="faq-answer">
+          Yes, Readify is completely free to use.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4 class="faq-question">Can I track my reading progress?</h4>
+        <p class="faq-answer">
+          Yes, you can track reading progress and completed books.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  
+  <footer class="footer glass">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Book Explorer</a>
+      <a href="tracker2.html">Tracker</a>
+      <a href="recommend.html">Recommend</a>
+      <a href="reading.html">Reading Flow</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+    <p>© 2025 Readify. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="Scripts/hamburgermenu.js"></script>
+  <script src="Scripts/feedback.js"></script>
+
+</body>
+</html>

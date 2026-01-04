@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Readify | Random Book Recommender</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get random book recommendations and save them to your reading list.">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles/recommend.css">
+</head>
+
+<body>
+
+  
+  <header class="navbar glass">
+    <h1 class="logo">Readify</h1>
+
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Book Explorer</a>
+      <a href="tracker2.html">Tracker</a>
+      <a href="recommend.html">Recommend</a>
+      <a href="reading.html">Reading Flow</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  
+  <main class="recommend-container">
+
+    <h2 class="page-title">Random Book Recommender</h2>
+
+    
+    <div class="filters glass">
+      <label>
+        Genre
+        <select id="genreSelect">
+          <option value="all">Any</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Dystopian">Dystopian</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Romance">Romance</option>
+          <option value="Fiction">Fiction</option>
+        </select>
+      </label>
+
+      <label>
+        Length
+        <select id="lengthSelect">
+          <option value="all">Any</option>
+          <option value="short">Short</option>
+          <option value="medium">Medium</option>
+          <option value="long">Long</option>
+        </select>
+      </label>
+    </div>
+
+    
+    <div id="resultCard" class="result-card glass hidden">
+      <h3 id="bookTitle"></h3>
+      <p id="bookAuthor"></p>
+      <p id="bookGenre"></p>
+
+      <button id="saveBtn">Save to Reading List</button>
+    </div>
+
+    
+    <button id="pickBtn" class="pick-btn">Pick a Book</button>
+
+  </main>
+
+  
+  <footer class="footer glass">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Book Explorer</a>
+      <a href="tracker2.html">Tracker</a>
+      <a href="recommend.html">Recommend</a>
+      <a href="reading.html">Reading Flow</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+    <p>© 2025 Readify. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="Scripts/hamburgermenu.js"></script>
+  <script src="Scripts/recommend.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Readify | Book Explorer</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore books, read synopses, and discover your next read.">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles/explore2.css">
+</head>
+
+<body>
+
+  <header class="navbar glass">
+    <h1 class="logo">Readify</h1>
+
+    <nav id="navLinks">
+  <a href="index.html">Home</a>
+  <a href="explore.html">Book Explorer</a>
+  <a href="tracker2.html">Tracker</a>
+  <a href="recommend.html">Recommend</a>
+  <a href="reading.html">Reading Flow</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  <main class="explore-container">
+
+    <h2 class="page-title">Book Explorer</h2>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by title, author, or genre..."
+      class="search-box"
+    >
+
+    
+    <div id="bookGrid" class="book-grid"></div>
+
+  </main>
+
+  
+  <div id="bookModal" class="modal hidden">
+    <div class="modal-content glass">
+
+      <span class="close-btn" onclick="closeModal()">×</span>
+
+      <h3 id="modalTitle"></h3>
+      <p id="modalSynopsis"></p>
+
+      <h4>Prequels / Sequels</h4>
+      <ul id="modalSeries"></ul>
+
+      <h4>Ratings</h4>
+      <table class="ratings-table">
+        <tr>
+          <th>Source</th>
+          <th>Rating</th>
+        </tr>
+        <tbody id="modalRatings"></tbody>
+      </table>
+
+    </div>
+  </div>
+
+  
+  <footer class="footer glass">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Book Explorer</a>
+      <a href="tracker2.html">Tracker</a>
+      <a href="recommend.html">Recommend</a>
+      <a href="reading.html">Reading Flow</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+    <p>© 2025 Readify. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="Scripts/hamburgermenu.js"></script>
+  <script src="Scripts/explore.js"></script>
+
+</body>
+</html>
